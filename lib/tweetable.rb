@@ -4,6 +4,16 @@ require 'pathname'
 # gem
 require 'twitter'
 
+# Usage:
+# class MyClass
+#   include Tweetable
+#
+#   def some_method
+#     tweet "ya bish"
+#   end
+# end
+#
+# This defaults to printing to stdout if config/twitter.rb doesn't exist.
 module Tweetable
   root_dir = Pathname.new(__FILE__).dirname.parent
   config = root_dir.join('config/twitter.rb')
