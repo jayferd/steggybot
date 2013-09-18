@@ -9,3 +9,6 @@
 
 #Ignore linux backup files
 *~
+
+# private credentials file
+config/twitter.rb
